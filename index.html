@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right" />
 </head>
 <style>
-    *{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @font-face {
+        font-family: 'netflixfont';
+        src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2');
     }
+    *{
+        font-family: 'netflixfont';
+    }
+    .banner{
+        height:100vh;  
+    }
+     @media only screen and (max-width:600px) {
+        .banner{
+            height:72vh;  
+        }
+        }
 </style>
-<body>
-    <div class="flex flex-col justify-center">
-        <div class="relative ">
-            <header class="px-8  py-2 absolute top-0 left-0  w-full bg-gradient-to-b from-current to-transparent h-screen">
-                <div class="flex justify-between px-8 py-4 mx-8 items-center">
-                    <div class="text-red-900 mx-8 h-100">
-                        <svg class="text-red-900 w-40" fill="#ff0000"            viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<body class="">
+    <div class="">
+        <div class="relative  w-full md:h-screen banner  bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/7c0e18aa-2c95-474d-802e-7f30e75dcca4/web/NG-en-20241014-TRIFECTA-perspective_96f899b3-9bad-446e-80b9-4b1da6a2242e_small.jpg')]" >
+            <header class="px-8  py-2   w-full  h-full bg-gradient-to-b from-current to-transparent">
+                <div class="flex justify-between md:px-8 py-4 md:mx-8 items-center">
+                    <div class="text-red-900 md:mx-8 ">
+                        <svg class="text-red-900 md:w-40 w-20" fill="#ff0000"            viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                             aria-hidden="true" role="img" class="default-ltr-cache-1d568uk ev1dnif2 ">
                             <g>
                                 <path
@@ -29,34 +42,57 @@
                         </svg>
                     </div>
                     <div class="">
-                        <button class="bg-[#ff0000] px-2 py-px rounded text-[#fff] font-bold">Sign up</button>
+                        <button class="bg-[#ff0000] px-3 py-px rounded text-[#fff]"><p class="font-thin text-sm py-1">Sign In</p></button>
                     </div>
                 </div>
             </header>
-            <img class="bg-cover h-screen w-screen  border " src="https://assets.nflxext.com/ffe/siteui/vlv3/7c0e18aa-2c95-474d-802e-7f30e75dcca4/web/NG-en-20241014-TRIFECTA-perspective_96f899b3-9bad-446e-80b9-4b1da6a2242e_small.jpg" alt="">
-            <div class="absolute bottom-0 left-0 w-full  bg-gradient-to-b from-transparent to-current h-full px-8">
-                <div class=" container mx-auto text-center my-40">
-                    <div class="my-2 py-2">
-                            <h3 class="text-slate-50 font-black text-4xl my-2">Unlimited movies,</h3>
-                            <h3 class="text-slate-50 font-black text-4xl my-1">TV shows, and more </h3>
+            <div class="w-full absolute top-44 left-0  bg-gradient-to-b from-transparent to-current   md:px-52  " style="height: 73%;">
+                <div class=" md:mx-auto px-0 text-center  md:px-8">
+                    <div class="md:my-2 md:py-2  px-8  mx-4">
+                        <h3 class="text-slate-50 font-bold md:text-6xl text-3xl md:my-2 py-2 "> Unlimited movies, TV shows, and more</h3>
                     </div>
-                    <div class="my-2 py-2">
-                        <p class="text-slate-50 font-bold text-xl">Starts with #2,200. Cancel Anytime</p>
+                    <div class="md:my-2 py-px">
+                        <p class="text-slate-50 font-normal  md:text-lg text-sm">Starts with #2,200. Cancel Anytime</p>
                     </div>
-                    <div class="my-4 py-4  container mx-8">
-                        <p class="text-slate-50 my-2 font-bold text-sm">Ready to watch? Enter your email to create or restart your membership.</p>
-                        <form >
-                            <!-- <legend class="absolute top-0 left-0 text-slate-50">Email Address</legend> -->
-                            <input type="email" class="relative w-96 py-4 rounded outline-white backdrop-blur-xl bg-white/30">
-                            <button class="text-slate-50  px-8 py-4 mx-2 my-2 rounded-lg bg-[#ff0000] items-center">Get Started <span class="material-symbols-outlined ">
+                    <div class="my-4 py-4 md:mx-8 mx-4">
+                        <p class="text-slate-50 my-2 md:font-bold font-thin md:text-sm">Ready to watch? Enter your email to create or restart your membership.</p>
+                        <form class="px-2">
+                            <!-- <legend class="absolute px-52 font-thin text-slate-50">Email Address</legend> -->
+                            <input type="email" class="relative md:w-96 w-80 py-4 rounded border  opacity-25 bg-white/30">
+                            <button class="text-slate-50  px-8 py-4 mx-2 my-2 rounded-lg bg-[#ff0000] items-center"><span>Get Started</span> <span class="material-symbols-outlined ">
                                 chevron_right
                             </span></button>
                         </form>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
+        <div class="border-4 border-white"></div>
+        <div class="  bg-black py-2"> 
+            <div class="container mx-auto border my-2">
+                <div class="px-2 py-px mx-4">
+                    <h3 class="text-white text-lg">Trending Now</h3>
+                </div>
+                <div class="flex flex-col md:flex-row px-2 py-px">
+                    <div class="px-2 py-2  mx-2 my-px">
+                        <select name="jurisdiction" id="range" class="py-4  bg-transparent md:rounded-md rounded-lg text-white w-full px-4 md:px-2 border ">
+                            <option value="Nigeria" class=" px-2">Nigeria</option>
+                            <option value="Global" class=" px-2">Global</option>
+                        </select>
+                    </div>
+                    <div class=" px-2 py-2 mx-2 my-px">
+                        <select name="jurisdiction" id="range" class="py-4  bg-transparent md:rounded-md rounded-lg text-white  w-full px-4 md:px-2 border">
+                            <option value="Movies" class=" px-2">Movies</option>
+                            <option value="TVshows" class=" px-2">TV shows</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div> 
 </body>
+<script src="script.js"></script>
 </html>
