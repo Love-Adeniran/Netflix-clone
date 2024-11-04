@@ -531,57 +531,125 @@
             </div>
             <div class="FAQ  mx-auto container my-4 md:px-20">
                 <div class="px-4 py-2 md:mx-8">
-                    <h3 class="text-white">Frequently Asked Questions</h3>
+                    <h3 class="text-white text-2xl">Frequently Asked Questions</h3>
                 </div>
-                <div class="container  mx-auto px-4 py-2 accordion">
+                <div class="container  mx-auto px-4 py-2 ">
 
-                    <details class=" border md:mx-8 px-4 py-8 ">
-                        <summary class="flex justify-between">
-                            <div>
-                                <p class="text-white">What is Netflix?</p>
-                            </div>
-                            <div>
-                                <div class="text-white relative inline-block text-left">+
+                    <div class="accordion my-2">
+                        <details class=" md:mx-8 cursor-pointer " >
+                            <summary class="flex justify-between  px-4 py-4 bg-[#2d2d2d]">
+                                <div>
+                                    <p class="text-white text-2xl">What is Netflix?</p>
                                 </div>
+                                <div>
+                                    <div class="text-white relative inline-block text-left text-3xl" id="add" onclick="plus()">+
+                                    </div>
+                                    <div class="text-white relative inline-block text-left text-3xl " id="cancel" onclick="cancel()">x</div>
+                                </div>
+                            </summary>
+                            
+                            <div class="text-white mt-px bg-[#2d2d2d] px-4 py-4">
+                                <p class="text-xl">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                                    documentaries, and
+                                    more on thousands of internet-connected devices.</p>
+                                <p class="text-xl">You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
                             </div>
-                        </summary>
-                        <div class="text-white">
-                            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and
-                            more on thousands of internet-connected devices.</p>
-                            <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price.
-                            There's always something new to discover and new TV shows and movies are added every week!</p>
-                        </div>
-
-                    </details>
-                    <div class="flex border md:mx-8 px-4 py-8 justify-between my-2">
-                        <div>
-                            <p class="text-white">How much does Netflix cost?</p>
-                        </div>
-                        <div class="text-white">+</div>
+                        </details>
                     </div>
-                    <div class="flex border md:mx-8 px-4 py-8 justify-between my-2">
-                        <div>
-                            <p class="text-white">What can i watch?</p>
-                        </div>
-                        <div class="text-white">+</div>
+                    <div class="accordion my-2 cursor-pointer">
+                        <details class="  md:mx-8  ">
+                            <summary class="flex justify-between px-4 py-4 bg-[#2d2d2d]">
+                                <div>
+                                    <p class="text-white text-2xl">How much does Netflix cost?</p>
+                                </div>
+                                <div>
+                                    <div class="text-white relative inline-block text-left text-3xl" id="add" onclick="plus()">+
+                                    </div>
+                                </div>
+                            </summary>
+                            <div class="text-white mt-px px-4 bg-[#2d2d2d] py-4">
+                                <p class="text-xl">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans
+                                range from ₦2,200 to ₦7,000 a month. No extra costs, no contracts.</p>
+                            </div>
+                        
+                        </details>
                     </div>
-                    <div class="flex border md:mx-8 px-4 py-8 justify-between my-2">
-                        <div>
-                            <p class="text-white">How do i cancel?</p>
-                        </div>
-                        <div class="text-white">+</div>
+                    <div class="accordion my-2 cursor-pointer">
+                        <details class="  md:mx-8  ">
+                            <summary class="flex justify-between px-4 py-4 bg-[#2d2d2d]">
+                                <div>
+                                    <p class="text-white text-2xl">Where can i watch?</p>
+                                </div>
+                                <div>
+                                    <div class="text-white relative inline-block text-left text-3xl" id="add" onclick="plus()">+
+                                    </div>
+                                </div>
+                            </summary>
+                            <div class="text-white mt-px bg-[#2d2d2d] px-4 py-4">
+                                <p class="text-xl">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your
+                                personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones,
+                                tablets, streaming media players and game consoles.</p>
+                                <p class="text-xl">You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and
+                                without an internet connection. Take Netflix with you anywhere.</p>
+                            </div>
+                        
+                        </details>
                     </div>
-                    <div class="flex border md:mx-8 px-4 py-8 justify-between my-2">
-                        <div>
-                            <p class="text-white">What can i watch on Netflix?</p>
-                        </div>
-                        <div class="text-white">+</div>
+                    <div class="accordion my-2 cursor-pointer">
+                        <details class="md:mx-8  ">
+                            <summary class="flex justify-between px-4 py-4 bg-[#2d2d2d]">
+                                <div>
+                                    <p class="text-white text-2xl">How do i cancel?</p>
+                                </div>
+                                <div>
+                                    <div class="text-white relative inline-block text-left text-3xl" id="add" onclick="plus()">+
+                                    </div>
+                                </div>
+                            </summary>
+                            <div class="text-white mt-px px-4 bg-[#2d2d2d] py-4">
+                                <p class="text-xl">Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two
+                                clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                            </div>
+                        
+                        </details>
                     </div>
-                    <div class="flex border md:mx-8 px-4 py-8 justify-between my-2">
-                        <div class="">
-                            <p class="text-white">Is Netflix good for kids?</p>
-                        </div>
-                        <div class="text-white">+</div>
+                    <div class="accordion my-2 cursor-pointer">
+                        <details class=" md:mx-8  ">
+                            <summary class="flex justify-between px-4 py-4 bg-[#2d2d2d]">
+                                <div>
+                                    <p class="text-white text-2xl">What can i watch on Netflix?</p>
+                                </div>
+                                <div>
+                                    <div class="text-white relative inline-block text-left text-3xl" id="add" onclick="plus()">+
+                                    </div>
+                                </div>
+                            </summary>
+                            <div class="text-white mt-px px-4 bg-[#2d2d2d] py-4">
+                                <p class="text-xl">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and
+                                more. Watch as much as you want, anytime you want.</p>
+                            </div>
+                        
+                        </details>
+                    </div>
+                    <div class="accordion my-2 cursor-pointer">
+                        <details class="md:mx-8  ">
+                            <summary class="flex justify-between px-4 py-4 bg-[#2d2d2d]">
+                                <div>
+                                    <p class="text-white text-2xl">Is Netflix good for kids?</p>
+                                </div>
+                                <div>
+                                    <div class="text-white relative inline-block text-left text-3xl" id="add" onclick="plus()">+
+                                    </div>
+                                </div>
+                            </summary>
+                            <div class="text-white mt-px px-4 bg-[#2d2d2d] py-4">
+                                <p class="text-xl">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV
+                                shows and movies in their own space.</p>
+                                <p class="text-xl">Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can
+                                watch and block specific titles you don’t want kids to see.</p>
+                            </div>
+                        
+                        </details>
                     </div>
                 </div>
                 <div class="mx-auto my-8 py-4">

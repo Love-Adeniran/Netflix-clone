@@ -1,3 +1,5 @@
+const add = document.getElementById('add')
+const close = document.getElementById('cancel');
 
 
 const getMovies = () => {
@@ -26,11 +28,32 @@ const getMovies = () => {
     .catch((err)=>{
         console.log(err);
     })
-
+    add.style.display = 'block';
+    close.style.display = 'none'
+}
+const plus = () => {
+    if (add.style.display = 'block'){
+        add.style.display = 'none';
+        close.style.display = 'block';
+    }
+    else if (close.style.display = 'block'){
+        add.style.display = 'block';
+        close.style.display = 'none';
+    }
+}
+const cancel = () => {
+    if (close.style.display = 'block') {
+        add.style.display = 'block';
+        close.style.display = 'none';
+    }
+    else if (add.style.display = 'block') {
+        add.style.display = 'none';
+        close.style.display = 'block';
+    }
 }
 
-const faq = document.getElementById('menu-button');
-faq.addEventListener('click', function(){
-    faq.aria-haspopup
-})
+// const faq = document.getElementById('menu-button');
+// faq.addEventListener('click', function(){
+//     faq.aria-haspopup
+// })
 //<p>${index + 1}. ${info.title}</p>
