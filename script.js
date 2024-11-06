@@ -14,13 +14,12 @@ const getMovies = () => {
     .then(res=>res.json())
     .then((result)=>{
         console.log(result.results);
-        
         let answer = result.results
         answer.map((info, index)=>{
             console.log(info);
-            movieName.innerHTML += `<div class=" border border-red-400 w-screen rounded ">
+            movieName.innerHTML += `<div class="w-0 mx-2 my-2 rounded-lg box scroll-ml-6 snap-start">
             
-            <img src=${image_base_url}/${info.backdrop_path} class=""/>
+            <img src=${image_base_url}/${info.backdrop_path} class="image rounded-lg"/>
             </div>
             `
         })

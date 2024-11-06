@@ -11,27 +11,10 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right" />
 </head>
 <style>
-    @font-face {
-        font-family: 'netflixfont';
-        src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2');
-    }
-
-    * {
-        font-family: 'netflixfont';
-    }
-
-    .banner {
-        height: 100vh;
-    }
-
-    @media only screen and (max-width:600px) {
-        .banner {
-            height: 72vh;
-        }
-    }
+  
 </style>
 
-<body class="" onload="getMovies()">
+<body class=" overflow-x-hidden" onload="getMovies()">
     <div class="">
         <div
             class="relative  w-full md:h-screen banner  bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/7c0e18aa-2c95-474d-802e-7f30e75dcca4/web/NG-en-20241014-TRIFECTA-perspective_96f899b3-9bad-446e-80b9-4b1da6a2242e_small.jpg')]">
@@ -108,8 +91,8 @@
                         </select>
                     </div>
                 </div>
-                <div class="border   h-auto">
-                    <div class="  bg-white flex flex-row" id="movieName">
+                <div class="container ">
+                    <div class=" flex flex-row overflow-x-scroll" id="movieName">
 
                     </div>
                 </div>
